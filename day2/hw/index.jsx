@@ -135,6 +135,5 @@ function List() {
   );
 }
 
-const list = List()
 
-ReactDOM.render(list, root);
+ReactDOM.render(<List />, root);
