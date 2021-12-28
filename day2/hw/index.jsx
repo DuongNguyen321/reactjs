@@ -116,7 +116,7 @@ class Element extends React.Component {
             text="Thể Thao & Du Lịch"
           />
           <Item
-            href="https://shopee.vn/%C3%94-T%C3%B4-Xe-M%C3%A1y-Xe-%C4%90%E1%BA%A1p-cat.11036793"
+            href="https://shopee.vn/Th%E1%BB%83-Thao-Du-L%E1%BB%8Bch-cat.11035478"
             src="/day2/hw/img/Xe.png"
             text="Ô tô & Xe Máy & Xe Đạp"
           />
@@ -126,6 +126,8 @@ class Element extends React.Component {
   }
 }
 
+
+
 function List() {
   return (
     <div className="list">
@@ -134,6 +136,5 @@ function List() {
     </div>
   );
 }
-
 
 ReactDOM.render(<List />, root);
