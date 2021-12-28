@@ -126,11 +126,15 @@ class Element extends React.Component {
   }
 }
 
-const list = (
-  <div className="list">
-    <h2>DANH MỤC</h2>
-    <Element />
-  </div>
-);
+function List() {
+  return (
+    <div className="list">
+      <h2>DANH MỤC</h2>
+      <Element />
+    </div>
+  );
+}
+
+const list = List()
 
 ReactDOM.render(list, root);
