@@ -29,5 +29,3 @@ User.propTypes = {
   last_name: PropTypes.string,
   avatar: PropTypes.string,
 };
-
-ReactDOM.render(<User />, root);

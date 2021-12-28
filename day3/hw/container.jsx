@@ -1,3 +1,5 @@
+
+
 class Container extends React.Component {
   render() {
     return (
@@ -7,4 +9,4 @@ class Container extends React.Component {
     );
   }
 }
-ReactDOM.render(Container, root);
+ReactDOM.render(<Container />, root);
