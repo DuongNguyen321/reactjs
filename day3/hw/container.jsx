@@ -1,9 +1,10 @@
-
-
 class Container extends React.Component {
   render() {
     return (
       <div className="container">
+        <div className="head">
+          <Clock />
+        </div>
         <User />
       </div>
     );
