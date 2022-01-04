@@ -9,7 +9,7 @@ class Clock extends React.Component {
         });
     },1000)
   }
-  state = { time: new Date() };
+  state = {time: new Date() };
 
   render() {
     return (
