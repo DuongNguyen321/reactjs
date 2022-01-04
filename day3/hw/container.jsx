@@ -1,3 +1,5 @@
+const root = document.getElementById("root");
+
 class Container extends React.Component {
   render() {
     return (

@@ -1,4 +1,5 @@
-const root = document.getElementById("root");
+// import React from "react";
+// import PropTypes from "prop-types";
 
 class User extends React.Component {
   render() {
@@ -23,7 +24,6 @@ class User extends React.Component {
 }
 
 User.propTypes = {
-  id: PropTypes.number,
   email: PropTypes.string,
   first_name: PropTypes.string,
   last_name: PropTypes.string,
