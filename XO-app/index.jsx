@@ -1,7 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -119,8 +115,6 @@ class Game extends React.Component {
   }
 }
 
-ReactDOM.render(<Game />, document.getElementById("root"));
-
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
@@ -141,5 +135,4 @@ function calculateWinner(squares) {
   return null;
 }
 
-// ========================================
-
+ReactDOM.render(<Game />, document.getElementById("root"));
