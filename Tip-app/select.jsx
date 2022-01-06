@@ -12,7 +12,7 @@ class SelectorInput extends React.Component {
   render() {
     return (
       <div>
-        <select onChange={this.handleChange}>
+        <select value="" onChange={this.handleChange}>
           <option disabled selected value="">
             -- Choose an Option --
           </option>

@@ -46,7 +46,7 @@ select{
 }
 button{
   height: 2em;
-  transition:0.8s;
+  transition:0.3s;
 }
 button:hover{
   background: greenyellow;
