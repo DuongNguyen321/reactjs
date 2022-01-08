@@ -1,3 +1,4 @@
+
 const randomURL = "https://www.themealdb.com/api/json/v1/1/random.php";
 const searchURL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 const Spinner = () => {
@@ -54,14 +55,16 @@ const App = () => {
       <div className="header">
         <h1 className="heading">Meal Finder</h1>
         <input
+          autoFocus
           type="text"
+          placeholder="Find here..."
           value={keyword}
           onChange={(e) => setKeyworld(e.target.value.trim())}
         />
-        <button className="search">
+        <button className="search btn-hover">
           <i className="bi bi-search"></i>
         </button>
-        <button className="random" onClick={getRandomMeal}>
+        <button className="random btn-hover" onClick={getRandomMeal}>
           <i className="bi bi-shuffle"></i>
         </button>
       </div>
