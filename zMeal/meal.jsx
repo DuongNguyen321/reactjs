@@ -32,7 +32,6 @@ const App = () => {
 
     if (keyword != "") {
       setLoading(true);
-      fetch(searchURL + keyword, { signal: controller.signal });
       fetch(searchURL + keyword, { signal: controller.signal })
         .then((res) => res.json())
         .then((meal) => {
