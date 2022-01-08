@@ -7,6 +7,8 @@ const Cell = ({ row, cell, value, handleClick }) => {
 };
 
 
+
+
 class Board extends React.Component {
   board(i) {
     return (

@@ -68,6 +68,11 @@ const App = () => {
     }
   };
 
+//  const history = this.state.history;
+//  const current = history[this.state.stepNumber];
+
+
+
   const handleClick = (row, cell) => {
     if (winner != null || board[row][cell] != null) {
      return reset()
@@ -97,6 +102,16 @@ const App = () => {
     ]);
     setWinner(null);
   };
+  //  const moves = history.map((step, move) => {
+  //    const desc = move ? "Bước thứ #" + move : "";
+  //    return (
+  //      <li key={move}>
+  //        <button onClick={() => this.jumpTo(move)}>{desc}</button>
+  //      </li>
+  //    );
+  //  });
+   
+
   return (
     <div className="container">
       <h1> {winner ? "Winner : " + winner : "Turn : " + turn} </h1>
@@ -163,6 +178,9 @@ const App = () => {
           />
         </div>
       </div>
+      {/* <div className="game-in4">
+        <ol>{moves}</ol>
+      </div> */}
     </div>
   );
 };
