@@ -1,8 +1,11 @@
-
 const randomURL = "https://www.themealdb.com/api/json/v1/1/random.php";
 const searchURL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 const Spinner = () => {
-  return <i className="bi bi-arrow-clockwise"></i>;
+  return (
+    <div className="Loading">
+      <i className="bi bi-arrow-clockwise"></i>
+    </div>
+  );
 };
 
 const Meal = ({ meal }) => {

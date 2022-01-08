@@ -185,3 +185,20 @@ img {
   font-weight: 500;
   margin-bottom: 50px;
 }
+.Loading{
+  position: relative;
+  z-index: 10000;
+ display: flex ;
+  justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.Loading i{
+  font-size: 200px;
+  animation: loading 2s linear infinite ;
+}
+@keyframes loading {
+0% {transform: rotate(0deg);color: #25aae1;}
+100% {transform: rotate(360deg);color: #2bb673;}
+  
+}
