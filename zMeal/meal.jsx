@@ -1,8 +1,8 @@
 const randomURL = "https://www.themealdb.com/api/json/v1/1/random.php";
 const searchURL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 const Spinner = () => {
- return<i className="bi bi-arrow-clockwise"></i>
-}
+  return <i className="bi bi-arrow-clockwise"></i>;
+};
 
 const Meal = ({ meal }) => {
   return (
@@ -18,9 +18,13 @@ const App = () => {
   const [meal, setMeal] = React.useState(null);
   const [keyword, setKeyworld] = React.useState("");
   const getRandomMeal = () => {
-    {
-      setLoading(true);
-    }
+    setLoading(true);
+    fetch(randomURL)
+      .then((res) => res.json())
+      .then((meal) => {
+        setMeal(meal.meals[0]);
+        setLoading(false);
+      });
   };
 
   React.useEffect(() => {
@@ -29,7 +33,7 @@ const App = () => {
     if (keyword != "") {
       setLoading(true);
       fetch(searchURL + keyword, { signal: controller.signal });
-      fetch("http://example.com/movies.json")
+      fetch(searchURL + keyword, { signal: controller.signal })
         .then((res) => res.json())
         .then((meal) => {
           setMeal(meal.meals[0]);
