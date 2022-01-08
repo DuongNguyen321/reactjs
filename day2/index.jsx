@@ -201,3 +201,4 @@ const root = document.getElementById("root");
 //element là 1 giá trị có thể sử dụng trong jsx bình thường như vòng lặp, if else...
 //nhúng giá trị dùng {}
 //css bằng xStyle và gán bằng {}
+// viết tên file nhớ viết hoa chữ đầu =))

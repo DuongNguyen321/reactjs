@@ -56,3 +56,4 @@ ListPokemon.propTypes = {
 
 
 ReactDOM.render(<ListPokemon />, root);
+
