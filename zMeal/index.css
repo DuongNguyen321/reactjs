@@ -43,7 +43,7 @@ body {
   justify-content: center;
   align-content: center;
   font-weight: 500;
-  animation: animate 20s infinite;
+  animation: animate 15s linear infinite;
   padding: 5px;
   background: #efefef;
   border-radius: 5px;
@@ -61,7 +61,7 @@ body {
     color: orange;
   }
   30% {
-    color: yellow;
+    color: rgb(198, 221, 69);
   }
   40% {
     color: yellowgreen;
@@ -158,7 +158,6 @@ input {
 }
 .title {
   border-top: 1px solid rgb(220, 220, 220);
-  animation-delay: 0.8s;
 }
 .meal {
   display: flex;
