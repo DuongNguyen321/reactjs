@@ -28,6 +28,10 @@ const App = () => {
       .then((meal) => {
         setMeal(meal.meals[0]);
         setLoading(false);
+      })
+      .catch(function (err) {
+        console.log(err);
+        return <Spinner />;
       });
   };
 
@@ -41,6 +45,10 @@ const App = () => {
         .then((meal) => {
           setMeal(meal.meals[0]);
           setLoading(false);
+        })
+        .catch(function (err) {
+          console.log(err);
+          return <Spinner />;
         });
     }
     return () => {
