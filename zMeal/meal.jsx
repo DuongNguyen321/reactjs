@@ -30,7 +30,7 @@ const App = () => {
         setLoading(false);
       })
       .catch(function (err) {
-        console.log(err);
+        console.log("không tải được hoặc đang tải dữ liệu từ sever");
         return <Spinner />;
       });
   };
@@ -47,7 +47,7 @@ const App = () => {
           setLoading(false);
         })
         .catch(function (err) {
-          console.log(err);
+          console.log("không tải được hoặc đang tải dữ liệu từ sever");
           return <Spinner />;
         });
     }
