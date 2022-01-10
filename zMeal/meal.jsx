@@ -1,5 +1,3 @@
-const randomURL = "https://www.themealdb.com/api/json/v1/1/random.php";
-const searchURL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 const Spinner = () => {
   return (
     <div className="Loading">
@@ -23,7 +21,7 @@ const App = () => {
   const [keyword, setKeyworld] = React.useState("");
   const getRandomMeal = () => {
     setLoading(true);
-    fetch(randomURL)
+    fetch("https://www.themealdb.com/api/json/v1/1/random.php")
       .then((res) => res.json())
       .then((meal) => {
         setMeal(meal.meals[0]);
@@ -40,7 +38,9 @@ const App = () => {
 
     if (keyword != "") {
       setLoading(true);
-      fetch(searchURL + keyword, { signal: controller.signal })
+      fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + keyword, {
+        signal: controller.signal,
+      })
         .then((res) => res.json())
         .then((meal) => {
           setMeal(meal.meals[0]);
