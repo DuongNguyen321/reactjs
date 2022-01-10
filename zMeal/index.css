@@ -21,80 +21,79 @@ body {
   width: 100%;
   background: #fefefe;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .header {
   display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-self: center;
   align-content: center;
   align-items: center;
+  background: #efefef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.heading {
+  margin-left: 1%;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgb(210, 255, 255));
 }
 .heading,
 .title {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
   font-weight: 500;
-  animation: animate 15s linear infinite;
+  animation: animate 4s linear infinite;
   padding: 5px;
   background: #efefef;
   border-radius: 5px;
-  border-bottom: 1px solid rgb(220, 220, 220);
+  border-bottom: 2px solid rgb(220, 220, 220);
 }
 
 @keyframes animate {
   0% {
-    color: red;
-  }
-  10% {
-    color: orangered;
-  }
-  20% {
-    color: orange;
-  }
-  30% {
-    color: rgb(198, 221, 69);
+    color: #25aae1;
   }
   40% {
-    color: yellowgreen;
-  }
-  50% {
-    color: green;
-  }
-  60% {
-    color: cyan;
-  }
-  70% {
-    color: blue;
+    color: #40e495;
   }
   80% {
-    color: darkblue;
-  }
-  90% {
-    color: rgb(91, 0, 211);
+    color: #30dd8a;
   }
   100% {
-    color: rgb(178, 0, 223);
+    color: #2bb673;
   }
 }
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1%;
+}
+
 input {
+  margin-right: 10px;
   height: 3em;
   width: 20em;
   padding: 1em;
-  border: none;
+  border: 1px solid #333;
   background: #efefef;
   border-radius: 1em;
   font-size: 16px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 .search,
 .random {
@@ -105,7 +104,7 @@ input {
   align-items: center;
 }
 .search {
-  margin-right: 2.5px;
+  margin-right: 10px;
 }
 
 .btn-hover {
@@ -114,8 +113,6 @@ input {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  margin-right: 10px;
-  margin-left: 10px;
   height: 3em;
   text-align: center;
   border: none;
@@ -158,6 +155,7 @@ input {
 }
 .title {
   border-top: 1px solid rgb(220, 220, 220);
+  width: 100%;
 }
 .meal {
   display: flex;
@@ -170,13 +168,13 @@ input {
   align-items: center;
 }
 img {
-  width: 500px;
-  height: 500px;
+  border: 1px solid rgb(220, 220, 220);
   border-radius: 20px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .instructions {
-    margin-top: 10px;
+  margin-top: 10px;
   margin-right: 30px;
   margin-left: 30px;
   line-height: 24px;
@@ -184,20 +182,25 @@ img {
   font-weight: 500;
   margin-bottom: 50px;
 }
-.Loading{
+.Loading {
   position: relative;
   z-index: 10000;
- display: flex ;
+  display: flex;
   justify-content: center;
-align-items: center;
-min-height: 100vh;
+  align-items: center;
+  min-height: 100vh;
 }
-.Loading i{
+.Loading i {
   font-size: 200px;
-  animation: loading 3s linear infinite ;
+  animation: loading 3s linear infinite;
 }
 @keyframes loading {
-0% {transform: rotate(0deg);color: #25aae1;}
-100% {transform: rotate(360deg);color: #2bb673;}
-  
+  0% {
+    transform: rotate(0deg);
+    color: #25aae1;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #2bb673;
+  }
 }
