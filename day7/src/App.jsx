@@ -6,7 +6,7 @@ const App = () => {
     <div>
       <h1>hello</h1>
       <i className="bi bi-123"></i>
-      <img style={{width:300}} src="./images/concho.jpgt" />
+      <img style={{width:300}} src="./images/concho.jpg" />
     </div>
   );
 };
