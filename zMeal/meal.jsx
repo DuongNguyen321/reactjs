@@ -1,4 +1,4 @@
-const Spinner = () => {
+const Loading = () => {
   return (
     <div className="Loading">
       <i className="bi bi-arrow-clockwise"></i>
@@ -29,17 +29,17 @@ const App = () => {
       })
       .catch(function (err) {
         console.log("không tải được hoặc đang tải dữ liệu từ sever");
-        return <Spinner />;
+        return <Loading />;
       });
   };
 
   React.useEffect(() => {
-    const controller = new AbortController();
+    const control = new AbortController();
 
     if (keyword != "") {
       setLoading(true);
       fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + keyword, {
-        signal: controller.signal,
+        signal: control.signal,
       })
         .then((res) => res.json())
         .then((meal) => {
@@ -48,11 +48,11 @@ const App = () => {
         })
         .catch(function (err) {
           console.log("không tải được hoặc đang tải dữ liệu từ sever");
-          return <Spinner />;
+          return <Loading />;
         });
     }
     return () => {
-      controller.abort();
+      control.abort();
       setLoading(false);
     };
   }, [keyword]);
@@ -73,7 +73,7 @@ const App = () => {
             value={keyword}
             onChange={(e) => setKeyworld(e.target.value.trim())}
           />
-          <button className="search btn-hover">
+          <button className="search btn-hover" onClick={getRandomMeal}>
             <i className="bi bi-search"></i>
           </button>
           <button className="random btn-hover" onClick={getRandomMeal}>
@@ -81,7 +81,7 @@ const App = () => {
           </button>
         </div>
       </div>
-      <div className="main">{loading ? <Spinner /> : <Meal meal={meal} />}</div>
+      <div className="main">{loading ? <Loading /> : <Meal meal={meal} />}</div>
     </div>
   );
 };
