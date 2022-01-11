@@ -95,7 +95,7 @@ ReactDOM.render(<App />, root);
 const btn = document.getElementById("btn");
 
 window.addEventListener("scroll", function () {
-  if (document.documentElement.scrollTop > 450) {
+  if (document.documentElement.scrollTop > 150) {
     btn.classList.add("hide");
     btn.classList.remove("scroll");
   } else {

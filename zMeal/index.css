@@ -143,7 +143,7 @@ input {
 }
 .title {
   position: fixed;
-  top: 75px;
+  top: 74px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,9 +171,8 @@ img {
   border-radius: 20px;
 }
 .instructions {
-  margin-top: 60px;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-top: 80px;
+width: 1000px;
   line-height: 24px;
   font-size: 18px;
   font-weight: 500;
@@ -227,19 +226,3 @@ img {
     font-size: 2em;
     color: #25aae1;
 }
-/* const btn = document.getElementById("btn");
-
-window.addEventListener("scroll", function () {
-  if (document.documentElement.scrollTop > 300) {
-    btn.classList.remove("hide");
-  } else {
-    btn.classList.add("hide");
-  }
-});
-
-btn.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}); */
