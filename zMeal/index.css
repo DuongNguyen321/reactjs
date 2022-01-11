@@ -32,6 +32,7 @@ body {
 }
 .header {
     position: fixed;
+    z-index: 1000;
     top:0;
   display: flex;
   width: 100%;
@@ -146,12 +147,16 @@ input {
   width: 100%;
 }
 .title {
-    position: fixed;
-    top: 75px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
   border-top: 1px solid #dcdcdc;
   width: 100%;
 }
 .meal {
+        position: absolute;
+    top: 75px;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -162,7 +167,6 @@ input {
   align-items: center;
 }
 img {
-    margin-top: 130px;
     width: 500px;
     height: 500px;
   border: 1px solid #dcdcdc;
