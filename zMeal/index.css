@@ -7,14 +7,7 @@
   font-weight: 500;
 }
 html::-webkit-scrollbar {
-  width: 0.4rem;
-}
-html::-webkit-scrollbar-track {
-  background: #30dd8a;
-}
-html::-webkit-scrollbar-thumb {
-  border-radius: 5rem;
-  background: #25aae1;
+  width: 0;
 }
 body {
   width: 100%;
@@ -168,16 +161,16 @@ input {
   align-content: center;
   align-items: center;
 }
-img {position: relative;
-    z-index: -1;
-    top:56px ;
+img {
+  position: relative;
+  z-index: -1;
+  top: 56px;
   width: 500px;
   height: 500px;
   border: 1px solid #dcdcdc;
   border-radius: 20px;
 }
 .instructions {
-
   margin-top: 60px;
   margin-right: 30px;
   margin-left: 30px;
@@ -208,3 +201,45 @@ img {position: relative;
     color: #2bb673;
   }
 }
+
+.scroll {
+  display: none;
+}
+.hide {
+    display: flex;
+}
+
+#btn {
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border:2px solid #2bb67393;
+  border-radius: 50%;
+  background: #30dd8994;
+}
+#btn i{
+    font-size: 2em;
+    color: #25aae1;
+}
+/* const btn = document.getElementById("btn");
+
+window.addEventListener("scroll", function () {
+  if (document.documentElement.scrollTop > 300) {
+    btn.classList.remove("hide");
+  } else {
+    btn.classList.add("hide");
+  }
+});
+
+btn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}); */

@@ -82,7 +82,31 @@ const App = () => {
         </div>
       </div>
       <div className="main">{loading ? <Loading /> : <Meal meal={meal} />}</div>
+      <div className="scroll" id="btn">
+        <i class="bi bi-arrow-up"></i>
+      </div>
     </div>
   );
 };
 ReactDOM.render(<App />, root);
+
+
+// js
+const btn = document.getElementById("btn");
+
+window.addEventListener("scroll", function () {
+  if (document.documentElement.scrollTop > 450) {
+    btn.classList.add("hide");
+    btn.classList.remove("scroll");
+  } else {
+    btn.classList.add("scroll");
+    btn.classList.remove("hide");
+  }
+});
+
+btn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
