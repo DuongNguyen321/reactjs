@@ -31,9 +31,9 @@ body {
   justify-content: center;
 }
 .header {
-    position: fixed;
-    z-index: 1000;
-    top:0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -140,6 +140,8 @@ input {
   outline: 0;
 }
 .main {
+  position: absolute;
+  top: 75px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -147,16 +149,16 @@ input {
   width: 100%;
 }
 .title {
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
+  position: fixed;
+  top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   border-top: 1px solid #dcdcdc;
   width: 100%;
 }
 .meal {
-        position: absolute;
-    top: 75px;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -166,14 +168,17 @@ text-align: center;
   align-content: center;
   align-items: center;
 }
-img {
-    width: 500px;
-    height: 500px;
+img {position: relative;
+    z-index: -1;
+    top:56px ;
+  width: 500px;
+  height: 500px;
   border: 1px solid #dcdcdc;
   border-radius: 20px;
 }
 .instructions {
-  margin-top: 10px;
+
+  margin-top: 60px;
   margin-right: 30px;
   margin-left: 30px;
   line-height: 24px;
