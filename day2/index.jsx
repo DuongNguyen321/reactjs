@@ -202,3 +202,4 @@ const root = document.getElementById("root");
 //nhúng giá trị dùng {}
 //css bằng xStyle và gán bằng {}
 // viết tên file nhớ viết hoa chữ đầu =))
+
