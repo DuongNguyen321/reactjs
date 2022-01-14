@@ -5,11 +5,15 @@ export default function Basket(props) {
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
   const shippingPrice = itemsPrice > 2000 ? 0 : 10;
   const totalPrice = itemsPrice + shippingPrice;
+  const handleSuccess = () => {
+alert("Thanh toán thành công");
+window.location.reload()
+  }
   return (
     <div className="block col-1">
       <h2>Giỏ Hàng</h2>
       <div>
-        {cartItems.length === 0 && <div>Làm gì có gì đâu bro =))</div>}
+        {cartItems.length === 0 && <div>Chưa có gì trong giỏ hàng</div>}
         {cartItems.map((item) => (
           <div key={item.id} className="row">
             <div className="col-2">{item.name}</div>
@@ -53,9 +57,7 @@ export default function Basket(props) {
             </div>
             <hr />
             <div className="row">
-              <button onClick={() => alert("Thanh toán thành công")}>
-                Thanh Toán
-              </button>
+              <button onClick={() => handleSuccess()}>Thanh Toán</button>
             </div>
           </>
         )}

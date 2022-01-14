@@ -28,34 +28,6 @@ const data = {
       image:
         "https://cdn.tgdd.vn/Products/Images/42/75180/samsung-galaxy-s7-edge-blue-coral-edition-300x300.jpg",
     },
-    {
-      id: "5",
-      name: "Samsung 13 Pro Max",
-      price: 799.99,
-      image:
-        "https://cdn.tgdd.vn/Products/Images/42/78479/samsung-galaxy-s8-4-300x300.jpg",
-    },
-    {
-      id: "6",
-      name: "Google 13 Pro Max ",
-      price: 899.99,
-      image:
-        "https://cdn.tgdd.vn/Products/Images/42/240166/google-pixel-6-pro-1-600x600.jpg",
-    },
-    {
-      id: "7",
-      name: "Xiaomi 13 Pro Max",
-      price: 1099.99,
-      image:
-        "https://cdn.tgdd.vn/Products/Images/42/73810/xiaomi-redmi-note-2-300x300.jpg",
-    },
-    {
-      id: "8",
-      name: "Samsung 12 Pro Max",
-      price: 999.99,
-      image:
-        "https://cdn.tgdd.vn/Products/Images/42/75180/samsung-galaxy-s7-edge-blue-coral-edition-300x300.jpg",
-    },
   ],
 };
 export default data;

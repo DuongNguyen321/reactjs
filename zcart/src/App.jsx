@@ -4,6 +4,7 @@ import Basket from './components/Basket';
 import data from './data';
 import { useState } from 'react';
 function App() {
+  
   const { products } = data;
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
