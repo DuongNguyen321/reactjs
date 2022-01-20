@@ -26,13 +26,9 @@ const navbarItems = [
 function Header(props) {
   return (
     <header>
-      <div id="menu-bar">
-        <i className="bi bi-list"></i>
-      </div>
-      <div className="fas fa-bars"></div>
-      <a href="index.html" className="logo">
+      <Link to="/" className="logo">
         <span>S</span>Travel
-      </a>
+      </Link>
       <nav className="navbar">
         {navbarItems.map((navbarItems) => {
           return (
@@ -47,10 +43,6 @@ function Header(props) {
         <i className="bi bi-search" id="search-btn"></i>
         <i className="bi bi-person login-btn"></i>
       </div>
-      <form action="true" className="search-bar-container">
-        <input type="search" id="search-bar" placeholder="Tìm kiếm..." />
-        <label htmlFor="search-bar" className="fas fa-search" />
-      </form>
     </header>
   );
 }
